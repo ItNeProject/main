@@ -7,3 +7,14 @@ GRADE VARCHAR2(2),
 LAST_UPDATE DATE,
 LOGIN_COUNT NUMBER(4)
 );
+
+INSERT INTO USERS(ID, PWD, PHONE, EMAIL, GRADE)
+VALUES('user01','password01','010-1234-1000','user01@work.com','G');
+
+INSERT INTO USERS(ID, PWD, PHONE, EMAIL, GRADE)
+VALUES('company','company','010-1234-2000','company@work.com','C');
+
+INSERT INTO USERS(ID, PWD, PHONE, EMAIL, GRADE)
+VALUES('admin','admin','010-1234-3000','admin@work.com','A');
+
+commit;
