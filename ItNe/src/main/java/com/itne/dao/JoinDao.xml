@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itne.dao.JoinDao">
+	
+	<!--public int insertUser(User dto);-->
+	<insert id="insertUser" parameterType="com.itne.dto.User">
+		insert into users(id, pwd, phone, email)
+		values(#{id}, #{pw}, #{phone}, #{email})
+	</insert>
+	
+	
+	<!-- public int checkId(String userId); -->
+	<select id="checkId" resultType="integer">
+		select count(*) from users where id=#{id}
+	</select>
+	
+</mapper>
