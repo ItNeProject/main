@@ -1,4 +1,4 @@
-package com.inNe.controller;
+package com.itne.controller;
 
 public class LoginController {
 
